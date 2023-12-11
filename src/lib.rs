@@ -1,11 +1,11 @@
 #![feature(portable_simd)]
 
 mod svf;
-use core_simd::f32x2;
+use core::simd::f32x2;
 use svf::SVFSimper;
 
-use ruce_bindings::ruce::ffi;
-use ruce_bindings::ruce::ruce_types::{PluginProcessor, PluginProcessorImpl};
+use ruce::ffi;
+use ruce::ruce_types::{PluginProcessor, PluginProcessorImpl};
 pub struct MyProcessorType {
     lpf: SVFSimper
 }
@@ -43,4 +43,4 @@ impl PluginProcessor for MyProcessorType {
     }
 }
 
-ruce_bindings::ruce_vst3::create_processor!(MyProcessorType);
+ruce::ruce_vst3::create_processor!(MyProcessorType);

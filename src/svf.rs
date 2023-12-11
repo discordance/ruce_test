@@ -4,7 +4,7 @@
 // thanks, andy!
 
 use std::f32::consts;
-use core_simd::f32x2;
+use core::simd::f32x2;
 
 pub struct SVFSimper {
     pub a1: f32x2,

@@ -8,4 +8,5 @@ crate-type = ["cdylib"]
 
 [dependencies]
 core_simd = { git = "https://github.com/rust-lang/portable-simd" }
-ruce_bindings = { git = "https://github.com/discordance/ruce"}
+ruce = { path = "../ruce" }
+# ruce_bindings = { git = "https://github.com/discordance/ruce"}
